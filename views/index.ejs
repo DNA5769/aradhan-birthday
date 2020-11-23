@@ -42,49 +42,24 @@
 		<div class="clear"></div>
 				
         <div id="headnav">
-            
-<div id="navbar">
-    <div id="navcontainer">
-        <ul>
-            <li id="liHome"><a href="https://readcomiconline.to">Home</a></li>
-            <li id="liDS"><a href="https://readcomiconline.to/ComicList">
-                Comic list</a></li>
-            <li id="liReportError"><a href="/Message/ReportError">Report Error</a></li>
-            <li id="liRequest"><a rel="nofollow" target="_blank" href="https://m.me/readcomiconline">
-                Request Comic</a></li>
-            
-            <li id="liCommunity"><a rel="nofollow" target="_blank" href="https://discord.gg/eCzUxNB">Forum</a></li>
-            <li id="li2"><a target="_blank" href="https://kimcartoon.to">Watch cartoon</a></li>
-        </ul>
-    </div>
-</div>
-<script type="text/javascript">
-    var path = 'Home';
-    if (path == 'Home')
-        $('#liHome a').attr('id', 'currentTab');
-    else if (path == 'Comic' || path == 'Genre' || path == 'Group')
-        $('#liDS a').attr('id', 'currentTab');
-    else if (document.URL.indexOf('GoPremium') >= 0)
-        $('#liGoPremium a').attr('id', 'currentTab');
-    else if (document.URL.indexOf('FreeDownload') >= 0)
-        $('#liDS a').attr('id', 'currentTab');
-    else if (document.URL.indexOf('FAQ') >= 0)
-        $('#liFAQ a').attr('id', 'currentTab');
-    else if (path == 'Error')
-        $('#liReport a').attr('id', 'currentTab');
-    else
-        $('#navcontainer a[href*="' + path + '"]').attr('id', 'currentTab');
-</script>
-
-    <div id="navsubbar">
-        <p>
-            
-            <a title="Bookmarks, reading type" href="/Register/Member">Register for MORE options</a>&nbsp;|&nbsp;
-            
-            <a href="/Shuffle">Random comic</a>
-        </p>
-    </div>
-
+            <div id="navbar">
+                <div id="navcontainer">
+                    <ul>
+                        <li id="liHome"><a href="/">Home</a></li>
+                        <li id="liDS"><a href="/">Comic list</a></li>
+                        <li id="liReportError"><a href="/">Report Error</a></li>
+                        <li id="liRequest"><a href="/">Request Comic</a></li>
+                        <li id="liCommunity"><a href="/">Forum</a></li>
+                        <li id="li2"><a href="/">Watch cartoon</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="navsubbar">
+                <p>
+                    <a title="Bookmarks, reading type" href="/">Register for MORE options</a>&nbsp;|&nbsp;
+                    <a href="/">Random comic</a>
+                </p>
+            </div>
         </div>
         <!-- end div headnav -->
         
