@@ -6,7 +6,7 @@ html, body
     font: normal 12px "Tahoma" , Arial, Helvetica, sans-serif;
     line-height: 18px;
     color: #ccc;
-    /*background: url(../images/tpl_bg.gif);*/
+    /*background: url(../images/wishes/tpl_bg.gif);*/
     background-color:#161616;
     height: 100%;
 }
@@ -86,7 +86,7 @@ input.fullboxtext
     margin: 0 0 10px 0;
     padding: 3px;
     border: 1px solid #666666;
-    background: #393939 url('/images/tpl_input_bg.gif') no-repeat top left;
+    background: #393939 url('/images/wishes/tpl_input_bg.gif') no-repeat top left;
     font: normal 15px "Tahoma" , Arial, Helvetica, sans-serif;
     color: #ccc;
     width: 240px;
@@ -98,7 +98,7 @@ textarea.fullboxtext
     margin: 0 0 10px 0;
     padding: 3px;
     border: 1px solid #666666;
-    background: #1b1a1a url('/images/tpl_textarea_bg.gif') no-repeat top left;
+    background: #1b1a1a url('/images/wishes/tpl_textarea_bg.gif') no-repeat top left;
     color: #ccc;
     font: normal 12px "Tahoma" , Arial, Helvetica, sans-serif;
     width: 240px;
@@ -122,7 +122,7 @@ textarea.fullboxtext
 {
     margin: 30px 30px 0px 0px;
     padding: 0px;
-    background: transparent url('/images/logo.png') no-repeat;
+    background: transparent url('/images/wishes/logo.png') no-repeat;
     text-indent: -9999px;
     float: left;
     display: inline;
@@ -168,7 +168,7 @@ textarea.fullboxtext
 #navbar
 {
     width: 100%;
-    background: url('/images/tpl_navbar_bg.gif') repeat-x;
+    background: url('/images/wishes/tpl_navbar_bg.gif') repeat-x;
     height: 50px;
 }
 
@@ -176,7 +176,7 @@ textarea.fullboxtext
 #navsubbar
 {
     width: 100%;
-    background: url('/images/tpl_subnavbar_bg.gif') repeat-x;
+    background: url('/images/wishes/tpl_subnavbar_bg.gif') repeat-x;
     height: 25px;
     line-height: 20px;
 }
@@ -226,7 +226,7 @@ textarea.fullboxtext
 #navcontainer a:link, #navcontainer a:visited
 {
     float: left;
-    background: url('/images/tpl_navbar_btn.png') no-repeat left top;
+    background: url('/images/wishes/tpl_navbar_btn.png') no-repeat left top;
     background-position: 0% -27px;
     color: #1c1c1c;
     text-decoration: none;
@@ -237,7 +237,7 @@ textarea.fullboxtext
 #navcontainer a:hover
 {
     float: left;
-    background: url('/images/tpl_navbar_btn.png') no-repeat left top;
+    background: url('/images/wishes/tpl_navbar_btn.png') no-repeat left top;
     background-position: 0% -54px;
     color: #1c1c1c;
     text-decoration: none;
@@ -249,7 +249,7 @@ textarea.fullboxtext
 #navcontainer li a#currentTab
 {
     float: left;
-    background: url('/images/tpl_navbar_btn.png') no-repeat left top;
+    background: url('/images/wishes/tpl_navbar_btn.png') no-repeat left top;
     background-position: 0% 0px;
     color: #ffffff;
     text-decoration: none;
@@ -315,7 +315,7 @@ textarea.fullboxtext
 {
     height: 30px;
     padding-left: 10px;
-    background: url('/images/tpl_box_bar.png') repeat-x;
+    background: url('/images/wishes/tpl_box_bar.png') repeat-x;
     font: normal 17px/23px "Tahoma" , Arial, Helvetica, sans-serif;
     letter-spacing: -1px;
     color: #fff;
@@ -328,7 +328,7 @@ textarea.fullboxtext
 {
     height: 25px;
     padding-left: 10px;
-    background: url('/images/tpl_box_bar.png') repeat-x;
+    background: url('/images/wishes/tpl_box_bar.png') repeat-x;
     font: normal 16px/24px "Tahoma" , Arial, Helvetica, sans-serif;
     letter-spacing: -1px;
     color: #FFFFFF;
@@ -338,7 +338,7 @@ textarea.fullboxtext
 {
     padding: 10px;
     padding-top: 10px;
-    background: transparent url('/images/tpl_box_shading2.png') repeat-x;
+    background: transparent url('/images/wishes/tpl_box_shading2.png') repeat-x;
     border: 1px solid #2f2f2f;
     border-top: 0px;
 }
@@ -382,7 +382,7 @@ input.text
 {
     margin: 0 0 0 0;
     border: 1px solid #666666;
-    background: #393939 url('/images/tpl_input_bg.gif') no-repeat top left;
+    background: #393939 url('/images/wishes/tpl_input_bg.gif') no-repeat top left;
     font: normal 15px "Tahoma" , Arial, Helvetica, sans-serif;
     color: #ccc;
 }
@@ -418,7 +418,7 @@ select
 
 .thinText
 {
-    background: url('/images/tpl_input_bg.gif') no-repeat scroll left top #393939;
+    background: url('/images/wishes/tpl_input_bg.gif') no-repeat scroll left top #393939;
     border: 1px solid #666666;
     color: #CCCCCC;
     font: 12px "Tahoma" ,Arial,Helvetica,sans-serif;
@@ -437,7 +437,7 @@ select
     margin: 0 0 10px 0;
     padding: 0px;
     width: 728px;
-    background: transparent url('/images/tpl_banner_bg.gif') repeat-x top;
+    background: transparent url('/images/wishes/tpl_banner_bg.gif') repeat-x top;
     border: 1px solid #333333;
     height: 208px;
 }
@@ -535,7 +535,7 @@ a.bigChar:hover { color: #fff; }
     margin: 0px;
     padding: 0px;
     height: 9px;
-    background: transparent url('/images/tpl_box_arrow.gif') no-repeat top left;
+    background: transparent url('/images/wishes/tpl_box_arrow.gif') no-repeat top left;
     position: relative;
     top: -12px;
     left: -10px;
@@ -546,7 +546,7 @@ a.bigChar:hover { color: #fff; }
     margin: 0px;
     padding: 0px;
     height: 9px;
-    background: transparent url('/images/tpl_box_arrow.gif') no-repeat top left;
+    background: transparent url('/images/wishes/tpl_box_arrow.gif') no-repeat top left;
     position: relative;
     top: -2px;
     left: 0;
@@ -557,7 +557,7 @@ a.bigChar:hover { color: #fff; }
     margin: 0px;
     padding: 0px;
     height: 9px;
-    background: transparent url('/images/tpl_box_arrow.gif') no-repeat top left;
+    background: transparent url('/images/wishes/tpl_box_arrow.gif') no-repeat top left;
     position: relative;
     top: -2px;
     left: 0;
@@ -568,7 +568,7 @@ a.bigChar:hover { color: #fff; }
     margin: 0px;
     padding: 0px;
     height: 9px;
-    background: transparent url('/images/tpl_box_arrow.gif') no-repeat top left;
+    background: transparent url('/images/wishes/tpl_box_arrow.gif') no-repeat top left;
     position: relative;
     top: -12px;
     left: 0;
@@ -690,7 +690,7 @@ a.bigChar:hover { color: #fff; }
 #tabmenucontainer a:link, #tabmenucontainer a:visited, #tabmenucontainer a:hover, #tabmenucontainer li a.tabactive
 {
     float: left;
-    background: transparent url('/images/tpl_tabs_btn.png') no-repeat left top;
+    background: transparent url('/images/wishes/tpl_tabs_btn.png') no-repeat left top;
 }
 
 #tabmenucontainer li a.tabactive 
@@ -714,7 +714,7 @@ a.bigChar:hover { color: #fff; }
 {
     margin: 15px 0 0 0;
     padding: 0px;
-    background: #111111 url('/images/tpl_box_shading2.png') repeat-x;
+    background: #111111 url('/images/wishes/tpl_box_shading2.png') repeat-x;
     border: 1px solid #333333;
     width: 728px;
     float: left;
@@ -962,7 +962,7 @@ a.prev, a.next
     height: 20px;
     background-repeat: no-repeat;
     margin: 5px 0 0 0;
-    background: url('/images/arrow-bar.png');
+    background: url('/images/wishes/arrow-bar.png');
     float: left;
 }
 a.prev
@@ -997,7 +997,7 @@ div.navi a
     height: 8px;
     float: left;
     margin: 3px;
-    background: url('/images/dots.png') 0 0 no-repeat;
+    background: url('/images/wishes/dots.png') 0 0 no-repeat;
     cursor: pointer;
 }
 div.navi a:hover
@@ -1069,7 +1069,7 @@ div.items img:hover
 #footer
 {   
     padding-top: 10px;
-    background: url('/images/tpl_footer_bg.png') repeat-x;
+    background: url('/images/wishes/tpl_footer_bg.png') repeat-x;
     clear: both;
     position: relative;
     z-index: 10;
@@ -1135,7 +1135,7 @@ div.items img:hover
 
 .read
 {
-    background: url('/images/read.png') no-repeat center left;
+    background: url('/images/wishes/read.png') no-repeat center left;
     padding: 12px 27px 12px;
     color: #FF9600;
     font: 15px "Tahoma" ,Arial,Helvetica,sans-serif;
@@ -1176,7 +1176,7 @@ div.items img:hover
     margin: 0 0 10px 0;
     padding: 2px;
     border: 1px solid #666666;
-    background: #393939 url('/images/tpl_input_bg.gif') no-repeat top left;
+    background: #393939 url('/images/wishes/tpl_input_bg.gif') no-repeat top left;
     font: normal 12px "Tahoma" , Arial, Helvetica, sans-serif;
     color: #ccc;
     width: 220px;
@@ -1241,17 +1241,17 @@ label.error
 
 #genres a.include
 {
-    background: url('/images/include.png') no-repeat;
+    background: url('/images/wishes/include.png') no-repeat;
 }
 
 #genres a.exclude
 {
-    background: url('/images/exclude.png') no-repeat;
+    background: url('/images/wishes/exclude.png') no-repeat;
 }
 
 #genres a
 {
-    background: url('/images/genre.png') no-repeat;
+    background: url('/images/wishes/genre.png') no-repeat;
     padding-left: 20px;
 }
 
@@ -1421,7 +1421,7 @@ label.error
     width: 250px;
     height: 16px;
     display: block;
-    background: url('/images/loader.gif') no-repeat 50% 50%;    
+    background: url('/images/wishes/loader.gif') no-repeat 50% 50%;    
 }
 
 
@@ -1450,7 +1450,7 @@ div.pagination div.results span
     height: 1%;
     display: block;
     float: left;
-    background: #ebebeb url('/images/pager.png') repeat-x;
+    background: #ebebeb url('/images/wishes/pager.png') repeat-x;
     border-top: 1px solid #dedede;
     border-left: 1px solid #cfcfcf;
     border-right: 1px solid #c4c4c4;
@@ -1474,7 +1474,7 @@ div.pagination ul.pager li
     height: 1%;
     float: left;
     list-style: none;
-    background: #ebebeb url('images/pager.png') repeat-x;
+    background: #ebebeb url('images/wishes/pager.png') repeat-x;
     border-top: 1px solid #dedede;
     border-left: 1px solid #cfcfcf;
     border-right: 1px solid #c4c4c4;
@@ -1491,7 +1491,7 @@ div.pagination ul.pager li.separator
 div.pagination ul.pager li.current
 {
     padding: 4px;
-    background: #b4b4b4 url('/images/pager_selected.png') repeat-x;
+    background: #b4b4b4 url('/images/wishes/pager_selected.png') repeat-x;
     border-top: 1px solid #cccccc;
     border-left: 1px solid #bebebe;
     border-right: 1px solid #b1b1b1;
@@ -1519,7 +1519,7 @@ div.pagination ul.pager li a
 div.pagination ul.pager li a:hover, div.pagination ul.pager li a:active
 {
     margin: -1px;
-    background: #b4b4b4 url('/images/pager_selected.png') repeat-x;
+    background: #b4b4b4 url('/images/wishes/pager_selected.png') repeat-x;
     border-top: 1px solid #cccccc;
     border-left: 1px solid #bebebe;
     border-right: 1px solid #b1b1b1;
@@ -1559,7 +1559,7 @@ div.pagination ul.pager li a:hover, div.pagination ul.pager li a:active
 .loading_text
 {
     z-index: 9999;
-    background: #ffffff url('/images/loading.gif') center center no-repeat;
+    background: #ffffff url('/images/wishes/loading.gif') center center no-repeat;
     width: 150px;
     height: 20px;
     text-align: center;
@@ -1596,7 +1596,7 @@ div.pagination ul.pager li a:hover, div.pagination ul.pager li a:active
     border-top-left-radius: 5px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 5px;
-    background: transparent url('/images/bg_gray_op25.png') repeat;
+    background: transparent url('/images/wishes/bg_gray_op25.png') repeat;
     position: fixed;
     z-index: 999;
     right : -85px;
@@ -1611,7 +1611,7 @@ div.pagination ul.pager li a:hover, div.pagination ul.pager li a:active
     top: 0px;
     left: 0px;
     z-index: 1000;
-    background: transparent url('/images/zoom_header.png');
+    background: transparent url('/images/wishes/zoom_header.png');
 }
     
 .btnZoom-container .btnZoom 
