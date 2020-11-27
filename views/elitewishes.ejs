@@ -27,142 +27,121 @@
                                 src="/images/elitewishes/header_logo.png"
                             />
                         </a>
-                    <div>
-                                <a class="clickableLogo" href="#" title="Happy Black Friday!"></a>
-                            </div>
-                                        </div>
-                </div>
-
-                            <div
-        id="headerSearchWrapperFree"     class="headerSearchWrapper"
-    >
-        <form autocomplete="off"
-            id="search_form"
-            action="/video/search"
-            method="get">
-            <fieldset class="fs-nf">
-                <div id="searchBarContainer" class="searchBorder">
-                                    <label for="search">
-                        <input
-                            id="searchInput"
-                            type="text"
-                            value=""
-                            placeholder="Search Pornhub..."
-                            maxlength="100"
-                            name="search"
-                            aria-label="Search"
-                            accesskey="?"
-                            data-token="MTYwNjQ5MTg3OBd7g-PdYJmMPNbYIlCNaKXm5tuo8211EffwPMri11Z8Vpss0wkCvGcNF-7UXLoydjOmKIer3RbQKzLV5FqCjGs."
-                            data-orientation="straight"
-                            autocomplete="off"
-                                                                        />
-                    </label>
-
-                    <ul id="searchSuggestions"></ul>
-
-                    <div id="searchTypeWrapper" class="">
-                        <div id="searchTypeSelected" class="dropdownTrigger">
-                            <i></i>
-                            <div id="js-toggleArrow" class="dropArrow"></div>
-                            <div class="fakeClick"></div>
+                        <div>
+                            <a class="clickableLogo" href="#" title="Happy Black Friday!"></a>
                         </div>
-                        <ul id="searchTypes" class="dropdownWrapper">
-                            <li><span>What are you looking for?</span></li>
-                        </ul>
                     </div>
-
-                    <div id="btnSearch" class="orangeButton"><i></i></div>
                 </div>
-            </fieldset>
-        </form>
-    </div>
 
-                            <span class="headerBtnsWrapper">
-        <button
-            id="headerUploadBtn"
-            class="greyButton js-headerUploadBtn"
-            onclick="ga('send', 'event', 'Header', 'click', 'Upload');"
-        >
+            <div id="headerSearchWrapperFree" class="headerSearchWrapper">
+                <form autocomplete="off" onsubmit="return false;">
+                    <fieldset class="fs-nf">
+                        <div id="searchBarContainer" class="searchBorder">
+                            <label for="search">
+                                <input
+                                    id="searchInput"
+                                    type="text"
+                                    value=""
+                                    placeholder="Search Pornhub..."
+                                    maxlength="100"
+                                    name="search"
+                                    aria-label="Search"
+                                    accesskey="?"
+                                    data-token="MTYwNjQ5MTg3OBd7g-PdYJmMPNbYIlCNaKXm5tuo8211EffwPMri11Z8Vpss0wkCvGcNF-7UXLoydjOmKIer3RbQKzLV5FqCjGs."
+                                    data-orientation="straight"
+                                    autocomplete="off"
+                                />
+                            </label>
+
+                            <div id="searchTypeWrapper" class="">
+                                <div id="searchTypeSelected" class="dropdownTrigger">
+                                    <i></i>
+                                    <div id="js-toggleArrow" class="dropArrow"></div>
+                                    <div class="fakeClick"></div>
+                                </div>
+                                <ul id="searchTypes" class="dropdownWrapper">
+                                    <li><span>What are you looking for?</span></li>
+                                </ul>
+                            </div>
+
+                            <div id="btnSearch" class="orangeButton"><i></i></div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <span class="headerBtnsWrapper">
+            <button
+                id="headerUploadBtn"
+                class="greyButton js-headerUploadBtn"
+            >
             <svg role="img" title="video upload" class="videoUploadIcon"><use xlink:href="#iconVideo"></svg>Upload    </button>
 
-        <div class="uploadModalContent js-uploadModalContent displayNone">
-            <a href="#" class="uploadItem uploadPhoto">
-                <svg role="img" title="photo upload" class="photoUploadIcon"><use xlink:href="#iconPhoto"></svg>
-                <span class="uploadItemText">Photos</span>
-            </a>
-            <a href="#" class="uploadItem uploadVideo">
-                <svg role="img" title="video upload" class="videoUploadIcon"><use xlink:href="#iconVideo"></svg>
-                <span class="uploadItemText">Videos</span>
-            </a>
-                </div>
+            <div class="uploadModalContent js-uploadModalContent displayNone">
+                <a href="#" class="uploadItem uploadPhoto">
+                    <svg role="img" title="photo upload" class="photoUploadIcon"><use xlink:href="#iconPhoto"></svg>
+                    <span class="uploadItemText">Photos</span>
+                </a>
+                <a href="#" class="uploadItem uploadVideo">
+                    <svg role="img" title="video upload" class="videoUploadIcon"><use xlink:href="#iconVideo"></svg>
+                    <span class="uploadItemText">Videos</span>
+                </a>
+            </div>
 
         <div id="svgUploadElements" class="displayNone">
-        <svg>
-            <defs>
-                <symbol id="iconGoLive" viewBox="0 0 32 32">
-                    <path d="M8.513 21.314c0.325 0.435 0.233 1.050-0.205 1.373s-1.056 0.232-1.381-0.203c-3.613-4.84-2.478-11.599 2.526-15.083 4.986-3.472 11.937-2.384 15.537 2.44 1.319 1.738 2.112 3.938 2.112 6.322 0 2.446-0.835 4.696-2.235 6.483l0.017-0.023c-0.332 0.43-0.951 0.511-1.384 0.181s-0.514-0.946-0.182-1.376c1.128-1.437 1.81-3.272 1.81-5.266 0-1.944-0.648-3.737-1.739-5.175l0.015 0.021c-2.961-3.967-8.705-4.866-12.819-2.002-4.097 2.853-5.021 8.357-2.073 12.307z"></path>
-                    <path d="M4.625 23.219c0.326 0.434 0.236 1.049-0.201 1.373s-1.055 0.235-1.382-0.199c-5.18-6.898-3.553-16.529 3.622-21.496 7.155-4.952 17.129-3.4 22.294 3.478 4.093 5.451 4.032 12.828-0.151 18.216-0.333 0.429-0.953 0.508-1.385 0.177s-0.511-0.947-0.178-1.376c3.641-4.69 3.695-11.098 0.132-15.843-4.524-6.026-13.299-7.392-19.583-3.042-6.264 4.336-7.678 12.706-3.168 18.712z"></path>
-                    <path d="M16.013 12.264c0.001 0 0.001 0 0.002 0 2.082 0 3.771 1.685 3.777 3.766v0.001c0 2.076-1.695 3.766-3.779 3.766s-3.779-1.69-3.779-3.766c0.006-2.082 1.695-3.767 3.777-3.767 0.001 0 0.001 0 0.002 0h-0zM16.013 10.525c-3.050 0-5.523 2.464-5.523 5.505 0 3.039 2.473 5.505 5.523 5.505s5.523-2.465 5.523-5.505c0-3.041-2.473-5.505-5.523-5.505zM21.877 22.714c-0.427 0.423-0.902 0.798-1.417 1.116l-0.034 0.020c2.513 1.635 3.831 4.433 4.351 6.407h-16.967c0.501-1.997 1.801-4.8 4.352-6.418-0.549-0.339-1.024-0.717-1.451-1.144v0c-3.726 2.679-4.911 7.419-4.911 9.306h21.004c0-1.868-1.26-6.591-4.928-9.286z"></path>
-                </symbol>
-                <symbol id="iconPhoto" viewBox="0 0 32 32">
-                    <path d="M20.8 1.6l2.928 3.2h5.072c1.76 0 3.2 1.44 3.2 3.2v19.2c0 1.76-1.44 3.2-3.2 3.2h-25.6c-1.765-0.006-3.194-1.435-3.2-3.199v-19.201c0-1.76 1.44-3.2 3.2-3.2h5.072l2.928-3.2h9.6zM16 9.6c-4.416 0-8 3.584-8 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zM16 12.48c2.828 0 5.12 2.292 5.12 5.12s-2.292 5.12-5.12 5.12v0c-2.828 0-5.12-2.292-5.12-5.12s2.292-5.12 5.12-5.12v0z"></path>
-                </symbol>
-                <symbol id="iconVideo" viewBox="0 0 32 32">
-                    <path d="M24.889 13.333v-6.222c0-0.978-0.8-1.778-1.778-1.778h-21.333c-0.978 0-1.778 0.8-1.778 1.778v17.778c0 0.978 0.8 1.778 1.778 1.778h21.333c0.978 0 1.778-0.8 1.778-1.778v-6.222l7.111 7.111v-19.556l-7.111 7.111z"></path>
-                </symbol>
-            </defs>
-        </svg>
-    </div>
-                                            <a
-                        id="headerUpgradePremiumBtn"
-                        class="orangeButton filterBtn removeAdLink tooltipPromoTriger"
-                        data-entrycode="UpgrBtn-Hdr_Star"
-                        onclick="triggerGatewayModal(event);ga('send', 'event', 'Header', 'click', 'upgrade');"
-                        style="background:#ffa31a" data-segment="straight"
-                        rel="nofollow"
-                    >
-                        <i></i>Upgrade                </a>
-                    <div
-                        class="tooltipPromo"
-                        data-entrycode="UpgrBtn-Hdr_Star"
-                        onclick="triggerGatewayModal(event);ga('send', 'event', 'Header', 'click', 'upgrade');"
-                        data-segment="straight"
-                        rel="nofollow"
-                    >
-                        <p>
-                            Black Friday Special                        <span>+</span>
-                        </p>
-                    </div>
-                            </span>
-
-                            <div id="topRightProfileMenu" class="">
-
-                                                            
-                <a
-                class="removeAdLink"
-                id="headerLoginLink"
-                href="/login?redirect=ZsFBB4JFv392MjDUuHfQYksQGQQT_nNYZzHbDEfO8RI"
-                onclick="signinbox.show(); ga('send', 'event', 'Header', 'click', 'Login'); return false;"
-            >
-                Login        </a>
-        
-    <a
-        id="headerSignupLink"
-        href="/create_account_select"
-        onclick="ga('send', 'event', 'Header', 'click', 'Sign Up');"
-    >
-        Sign Up</a>                            </div>
-            </div>
+            <svg>
+                <defs>
+                    <symbol id="iconGoLive" viewBox="0 0 32 32">
+                        <path d="M8.513 21.314c0.325 0.435 0.233 1.050-0.205 1.373s-1.056 0.232-1.381-0.203c-3.613-4.84-2.478-11.599 2.526-15.083 4.986-3.472 11.937-2.384 15.537 2.44 1.319 1.738 2.112 3.938 2.112 6.322 0 2.446-0.835 4.696-2.235 6.483l0.017-0.023c-0.332 0.43-0.951 0.511-1.384 0.181s-0.514-0.946-0.182-1.376c1.128-1.437 1.81-3.272 1.81-5.266 0-1.944-0.648-3.737-1.739-5.175l0.015 0.021c-2.961-3.967-8.705-4.866-12.819-2.002-4.097 2.853-5.021 8.357-2.073 12.307z"></path>
+                        <path d="M4.625 23.219c0.326 0.434 0.236 1.049-0.201 1.373s-1.055 0.235-1.382-0.199c-5.18-6.898-3.553-16.529 3.622-21.496 7.155-4.952 17.129-3.4 22.294 3.478 4.093 5.451 4.032 12.828-0.151 18.216-0.333 0.429-0.953 0.508-1.385 0.177s-0.511-0.947-0.178-1.376c3.641-4.69 3.695-11.098 0.132-15.843-4.524-6.026-13.299-7.392-19.583-3.042-6.264 4.336-7.678 12.706-3.168 18.712z"></path>
+                        <path d="M16.013 12.264c0.001 0 0.001 0 0.002 0 2.082 0 3.771 1.685 3.777 3.766v0.001c0 2.076-1.695 3.766-3.779 3.766s-3.779-1.69-3.779-3.766c0.006-2.082 1.695-3.767 3.777-3.767 0.001 0 0.001 0 0.002 0h-0zM16.013 10.525c-3.050 0-5.523 2.464-5.523 5.505 0 3.039 2.473 5.505 5.523 5.505s5.523-2.465 5.523-5.505c0-3.041-2.473-5.505-5.523-5.505zM21.877 22.714c-0.427 0.423-0.902 0.798-1.417 1.116l-0.034 0.020c2.513 1.635 3.831 4.433 4.351 6.407h-16.967c0.501-1.997 1.801-4.8 4.352-6.418-0.549-0.339-1.024-0.717-1.451-1.144v0c-3.726 2.679-4.911 7.419-4.911 9.306h21.004c0-1.868-1.26-6.591-4.928-9.286z"></path>
+                    </symbol>
+                    <symbol id="iconPhoto" viewBox="0 0 32 32">
+                        <path d="M20.8 1.6l2.928 3.2h5.072c1.76 0 3.2 1.44 3.2 3.2v19.2c0 1.76-1.44 3.2-3.2 3.2h-25.6c-1.765-0.006-3.194-1.435-3.2-3.199v-19.201c0-1.76 1.44-3.2 3.2-3.2h5.072l2.928-3.2h9.6zM16 9.6c-4.416 0-8 3.584-8 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zM16 12.48c2.828 0 5.12 2.292 5.12 5.12s-2.292 5.12-5.12 5.12v0c-2.828 0-5.12-2.292-5.12-5.12s2.292-5.12 5.12-5.12v0z"></path>
+                    </symbol>
+                    <symbol id="iconVideo" viewBox="0 0 32 32">
+                        <path d="M24.889 13.333v-6.222c0-0.978-0.8-1.778-1.778-1.778h-21.333c-0.978 0-1.778 0.8-1.778 1.778v17.778c0 0.978 0.8 1.778 1.778 1.778h21.333c0.978 0 1.778-0.8 1.778-1.778v-6.222l7.111 7.111v-19.556l-7.111 7.111z"></path>
+                    </symbol>
+                </defs>
+            </svg>
         </div>
 
-            <div
-            itemscope
-            itemtype="http://www.schema.org/SiteNavigationElement"
-            id="headerMenuContainer"
-            class=""
+        <a
+            id="headerUpgradePremiumBtn"
+            class="orangeButton filterBtn removeAdLink tooltipPromoTriger"
+            data-entrycode="UpgrBtn-Hdr_Star"
+            style="background:#ffa31a" data-segment="straight"
+            rel="nofollow"
         >
-            <div id="headerMainMenuInner">
-                <div id="headerCampaignDiv">
+        <i></i>Upgrade                </a>
+        
+        <div id="topRightProfileMenu" class="">                                                            
+            <a
+                class="removeAdLink"
+                id="headerLoginLink"
+                href="#"
+            >
+                Login
+            </a>
+        
+            <a
+                id="headerSignupLink"
+                href="#"
+            >
+                Sign Up
+            </a>
+        </div>
+    </div>
+</div>
+
+<div
+    itemscope
+    itemtype="http://www.schema.org/SiteNavigationElement"
+    id="headerMenuContainer"
+    class=""
+>
+    <div id="headerMainMenuInner">
+        <div id="headerCampaignDiv">
                     
 
     <ul id="headerMainMenu" class="">
