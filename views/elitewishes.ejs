@@ -10,201 +10,7 @@
   <link rel="stylesheet" href="css/elitewishes.css">
   <link rel="shortcut icon" href="/images/elitewishes/favicon.ico" />
 </head>
-<body>
   <body class="logged-out">
-    <div id="js-networkBar"></div>
-    <div id="premium-promo-modal" class="modalWrapper">
-      <div class="promoModalWrapper premium">
-        <div class="promoOverlay"></div>
-        <div class="promoContent"></div>
-        <div class="promoButtons">
-            <a class="buttonBase big orangeButton promoStartfreeweek freePromoWeek" id="freePromoStartWeek">
-                <span>Get Free Premium</span>
-                <img class="rightArrow lazy" data-src="/images/elitewishes/arrow.svg" alt="Right arrow" width="24" height="11" />
-            </a>
-            <a class="buttonBase big orangeButton promoStartfreeweekExpired freePromoWeek" id="promoStartfreeweek">Start Membership</a>
-            <a class="buttonBase big light greyButton promoCancelFreeWeek" id="promoCancelFreeWeek">No thanks</a>
-        </div>
-      </div>
-    </div>
-
-    <div id="premium-covid-expired-modal" class="modalWrapper">
-      <div class="expiredModalWrapper premium">
-        <div class="expiredContent">
-            <div class="logo">
-                <a class="logoPremium"href="#">
-            <img class="lazy" data-src="/images/elitewishes/logo.png" alt="Pornhub Logo">
-                </a>
-            </div>
-            <div class="title">Continue Your Premium Experience</div>
-            <div class="content">Thank you for your contribution in flattening the curve.  The Free Premium period has ended, you can continue to help by staying home and enjoying more than 175,000 Premium Videos from more than 2000 studios</div>
-            <div class="foot">Enjoy another 7 days of free premium on us</div>
-            <div class="modalButtons">
-                <button class="buttonBase big orangeButton freeWeek">
-                    <span>Get Free Premium</span>
-                </button>
-                <br />
-                <a id="promoCancelFreeWeek" class="button stayPh">No thanks, continue to pornhub.com</a>
-            </div>
-        </div>
-      </div>
-    </div>
-<div id="tooltip"></div>
-
-
-    
-<div id="signinModal" class="modalWrapper">
-  <div class="singupModalWrapper">
-    <div class="mainModalTitle">
-      <span class="loginAccessTitle-en">Login or sign up</span>
-    </div>
-    <div class="modal-close js_closeModal"></div>
-
-    <div class="modal-body clearfix">
-      <form autocomplete="off" class="js-loginFormModal">
-        <input
-          type="hidden"
-          class="js-redirect"
-          name="redirect"
-          value="cMGBDzB5Oqzao-xvaw50dV1_oYQOEj3rVDSfmLHK4qY"
-        />
-        <input type="hidden" name="token" value="MTYwNjQ5MTg3OBd7g-PdYJmMPNbYIlCNaKXm5tuo8211EffwPMri11Z8Vpss0wkCvGcNF-7UXLoydjOmKIer3RbQKzLV5FqCjGs." />
-        <input type="hidden" name="remember_me" value="1" />
-        <input type="hidden" name="from" value="pc_login_modal_:index">
-        <input id="js-tasteProfileLoginModal" type="hidden" name="taste_profile">
-                  
-        <div class="leftSide floatLeft loginColumnLeft-en">
-          <p class="signinError" style="display:none;"></p>
-          <p id="signinLoggingin" style="display:none;">Logging in...</p>
-          <div>
-            <input
-                id="usernameModal"
-                placeholder="Username (6+ characters)"
-                class="js-signinUsernameModal signup_field"
-                name="username"
-                maxlength="50"
-                type="text"
-                tabindex="0"
-                value=""
-                autofocus
-            >
-          </div>
-          <div>
-            <input
-                id="passwordModal"
-                placeholder="Password (6+ characters)"
-                class="js-signinPasswordModal signup_field"
-                name="password"
-                type="password"
-                tabindex="0"
-                value=""
-            >
-          </div>
-          <div class="loginAccessRemember">
-            <input type="checkbox" checked id="signinRemember" />
-            <label for="signinRemember">Remember me on this computer<br />
-                <span class="loginAccessRememberInfo">(not recommended on public or shared computers)</span>
-            </label>
-          </div>
-          <div class="optional captchaLoginBlock">
-            <div class="g-recaptcha" data-type="v2" data-sitekey="6LfyQRoUAAAAAApqS-inJxUwCOtvOHwKxJuZCsuv"></div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="signinSubmit" class="orangeButton buttonBase js-loginSubmitModal">Login</div>
-          <div class="leftCol">
-            <ul>
-              <li>
-                  <a id="signinForgotpassword" href="#">
-                    Forgot Username or Password?
-                  </a>
-              </li> |
-              <li>
-                  <a id="signinConfirmationEmail" href="#">
-                      Resend confirmation email
-                  </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="rightSide floatRight loginColumnRight-en">
-          <h2 class="loginAccessTitle-en">
-              Not a free member yet?
-          </h2>
-          <span class="loginAccessMessage loginAccessMessageRight">
-              Here's what you're missing out on!
-          </span>
-          <br /><br />
-          <ul class="clearfix">
-              <li>
-                  <i class="mark registerSprite enabled"></i><span class="tab1">Download Videos</span>
-              </li>
-              <li>
-                  <i class="mark registerSprite enabled"></i><span>Post Comments</span>
-              </li>
-              <li>
-                  <i class="mark registerSprite enabled"></i><span class="tab3">Add Favorites</span>
-              </li>
-              <li>
-                  <i class="mark registerSprite enabled"></i><span class="tab4">Create Playlists</span>
-              </li><br>
-              <li>And many more!</li>
-          </ul>
-          <br/>
-          <a class="buttonBase greyButton" id="signupButtonId" href="#">
-            Sign Up
-          </a>
-        </div>
-      </form>
-
-      <form autocomplete="off" class="js-userVerificationModal hidden">
-        <p class="hidden twoStepVerificationMessage"></p>
-        <div class="codeContent">
-            <h5>A text message with your code has been sent to:</h5>
-            <h5 id="userPhoneNumber"></h5>
-        </div>
-
-        <input type="hidden" name="username" id="verificationEnabledUsername" />
-        <input type="hidden" name="token2" id="verificationEnabledToken" />
-        <input type="hidden" name="verification_modal" value="1" />
-        <input type="hidden" name="authyId" id="authyId" />
-        <input type="hidden" name="authyIdHashed" id="authyIdHashed" />
-        <input type="hidden" name="token" id="xsrfToken" value="MTYwNjQ5MTg3OBd7g-PdYJmMPNbYIlCNaKXm5tuo8211EffwPMri11Z8Vpss0wkCvGcNF-7UXLoydjOmKIer3RbQKzLV5FqCjGs." />
-
-        <label for="enterVerificationCode">Enter the code</label>
-        <input type="number" name="verification_code" id="enterVerificationCode" class="enterVerificationCode" />
-        <button id="btnVerifyCode" class="orangeButton big buttonBase disabled removeAdLink">
-          Verify
-        </button>
-
-        <div class="resendCodeResponse hidden">
-          <div class="resendCodeStatus"></div>
-          <div class="resendCodeMessage"></div>
-        </div>
-
-        <div class="codeResend">
-          <span>Didn't receive the code?</span>
-          <a href="#" id="resendVerificationCode" class="orangeText removeAdLink">Resend</a>                    </div>
-          <div class="contactSupport">
-            <span>Don't have your phone? Please</span>
-            <a href="#" class="orangeText">
-              contact support
-            </a>
-          </div>
-      </form>
-    </div>
-  </div>
-</div>	    
-
-<div class="add-to-playlist-menu display-none">
-  <div class="signin">
-    <a href="#" style="display:inline;">
-      Sign in
-    </a> 
-    to add this to a playlist
-  </div>
-</div>
-
 <div class="wrapper">
 
 <header itemscope itemtype="http://schema.org/WPHeader" id="header" >
@@ -214,8 +20,7 @@
                 <div itemscope itemtype="http://schema.org/Organization" class="logoWrapper">
                     <a
                         itemprop="url"
-                        href="/"
-                        onclick="ga('send', 'event', 'Header', 'click', 'Logo');"
+                        href="#"
                     >
                         <img
                             itemprop="logo"
@@ -226,7 +31,7 @@
                             src="https://ci.phncdn.com/pics/logos/6272.png?cache=2020112601"                        />
                                             </a>
                                             <div>
-                            <a class="clickableLogo" href="https://www.pornhub.com/view_video.php?viewkey=ph5fbd2a2e22c3f" title="Happy Black Friday!"></a>
+                            <a class="clickableLogo" href="#" title="Happy Black Friday!"></a>
                         </div>
                                     </div>
             </div>
