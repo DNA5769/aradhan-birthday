@@ -20,175 +20,56 @@
     
     
     <div id="containerRoot">
-        <div id="head">
-            <h3>
-                
-<div style="position: relative; text-align: right; margin: -40px 46px 20px 0px; font: bold 13px Arial;">
-    
-    <div id="topHolderBox" style="width: 230px; height: 30px;">
-        <img src="/Content/images/user-small.png" style="vertical-align: middle; margin-bottom: 5px">
-        Please <a class="red" href="/Login">login</a>
-        or <a class="red" href="/Register">register</a>
-    </div>
-    
-</div>
-
-                <div id="search" style="position: relative">
-                    <form id="formSearch" method="post">
+      <div id="head">
+        <h3>
+            <div id="search" style="position: relative">
+                <form id="formSearch">
                     <p>
                         <input style="width: 250px" id="keyword" name="keyword" value="" class="text" autocomplete="off" />
-                        <input id="imgSearch" type="image" src="https://readcomiconline.to/Content/images/search.png"
+                        <input id="imgSearch" type="image" src="/images/wishes/search.png"
                             class="button" onclick="return false;" />
                     </p>
-                    <div id="result_box" style="display: none; left: 57px; margin-top: -3px">
-                    </div>
                     <div style="float: left; width: 240px; text-align: left; margin-left: 58px;">
                         <div style="float: left; width: 90px">
-                            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Freadcomiconline&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font&amp;height=21"
+                            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/therealDNA1&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font&amp;height=21"
                                 scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 100px;
                                 height: 21px;" allowtransparency="true"></iframe>
                         </div>
                         <div style="float: left; width: 65px">
-                            <a href="https://twitter.com/ReadComicOnline" class="twitter-follow-button" data-show-screen-name="false" data-lang="en" data-show-count="false">&nbsp;</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <a href="https://twitter.com/aradhanfurtado" class="twitter-follow-button" data-show-screen-name="false" data-lang="en" data-show-count="false">&nbsp;</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
-                    <div style="margin: 10px 48px 10px 0">
-                        <a href="https://readcomiconline.to/AdvanceSearch">
-                            <img src="https://readcomiconline.to/Content/images/read.png"
-                                width="16px" border="0" style="vertical-align: middle" />&nbsp;&nbsp;Adv Search</a>
-                    </div>
-                    </form>
-                </div>
-                <script type="text/javascript">
-                    $('#imgSearch').click(function () {
-                        Submit();
-                    });
-
-                    var delay = (function () {
-                        var timer = 0;
-                        return function (callback, ms) {
-                            clearTimeout(timer);
-                            timer = setTimeout(callback, ms);
-                        };
-                    })();
-
-                    $('#keyword').keyup(function () {
-                        delay(function () {
-                            Suggest();
-                        }, 1500);
-                    });
-
-                    $('#selectSearch').change(function () {
-                        Suggest();
-                    });
-
-                    $("#selectSearch option").each(function () {
-                        var url = location.href;
-                        if (url.indexOf($(this).attr('value')) != -1)
-                            $(this).attr("selected", "selected");
-                    });
-
-                    function Submit() {
-                        if ($.trim($('#keyword').val()).length < 2) {
-                            $('#keyword').blur();
-                            alert('Keyword must be more than one character!');
-                        }
-                        else {
-                            $("#formSearch").attr('action', "/Search/Comic");
-                            $("#formSearch").submit();
-                        }
-                    }
-
-
-                    function Suggest() {
-                        var keyword = $.trim($('#keyword').val());
-                        if (keyword.length < 5) return;
-                        if (keyword != "") {
-                            $('#result_box').html("<span id='loader'></span>");
-                            $('#result_box').css('display', 'block');
-                            
-                            $.ajax(
-                            {
-                                type: "POST",
-                                url: "/Search/SearchSuggest",
-                                data: "type=Comic" + '&keyword=' + encodeURIComponent(keyword),
-                                success: function (message) {
-                                    if (message != "") {
-                                        $('#result_box').html(message);
-                                    }
-                                    else {
-                                        //$('#result_box').html('');
-                                        //$('#result_box').css('display', 'none');
-                                        $('#result_box').html('<a href="#" onclick="return false;">Press Enter to search...</a>');
-                                    }
-                                }
-                            });
-                        }
-                        else {
-                            $('#result_box').html('');
-                            $('#result_box').css('display', 'none');
-                        }
-                    }
-
-                    $(document).click(function (e) {
-                        var container = $("#search");                        
-                        if (container.has(e.target).length == 0) {
-                            $("#result_box").hide();
-                        }
-                    });
-                </script>
-            </h3>
-            <h1>
-                <a href="/" title="ReadComicOnline - High quality comic online"
-                    class="logo">ReadComicOnline.to</a></h1>
-        </div>
-        <!-- end div head -->
-        <div class="clear">
-        </div>
-        <div id="headnav">
-            
-<div id="navbar">
-    <div id="navcontainer">
-        <ul>
-            <li id="liHome"><a href="https://readcomiconline.to">Home</a></li>
-            <li id="liDS"><a href="https://readcomiconline.to/ComicList">
-                Comic list</a></li>
-            <li id="liReportError"><a href="/Message/ReportError">Report Error</a></li>
-            <li id="liRequest"><a rel="nofollow" target="_blank" href="https://m.me/readcomiconline">
-                Request Comic</a></li>
-            
-            <li id="liCommunity"><a rel="nofollow" target="_blank" href="https://discord.gg/eCzUxNB">Forum</a></li>
-            <li id="li2"><a target="_blank" href="https://kimcartoon.to">Watch cartoon</a></li>
-        </ul>
+                </form>
+            </div>
+        </h3>
+        <h1>
+            <a href="#" title="ReadComicOnline - High quality comic online"
+      class="logo">ReadComicOnline.to</a>
+  </h1>
     </div>
-</div>
-<script type="text/javascript">
-    var path = 'Comic';
-    if (path == 'Home')
-        $('#liHome a').attr('id', 'currentTab');
-    else if (path == 'Comic' || path == 'Genre' || path == 'Group')
-        $('#liDS a').attr('id', 'currentTab');
-    else if (document.URL.indexOf('GoPremium') >= 0)
-        $('#liGoPremium a').attr('id', 'currentTab');
-    else if (document.URL.indexOf('FreeDownload') >= 0)
-        $('#liDS a').attr('id', 'currentTab');
-    else if (document.URL.indexOf('FAQ') >= 0)
-        $('#liFAQ a').attr('id', 'currentTab');
-    else if (path == 'Error')
-        $('#liReport a').attr('id', 'currentTab');
-    else
-        $('#navcontainer a[href*="' + path + '"]').attr('id', 'currentTab');
-</script>
-
-    <div id="navsubbar">
-        <p>
-            <a href="/ComicList">Sort by alphabet</a>| <a href="/ComicList/MostPopular">Sort by
-                popularity</a> | <a href="/ComicList/LatestUpdate">Latest update</a> | <a href="/ComicList/Newest">
-                    New comic</a>
-        </p>
-    </div>
-
+    <!-- end div head -->
+<div class="clear"></div>
+    
+    <div id="headnav">
+        <div id="navbar">
+            <div id="navcontainer">
+                <ul>
+                    <li id="liHome"><a href="#">Home</a></li>
+                    <li id="liDS"><a href="#">Comic list</a></li>
+                    <li id="liReportError"><a href="#">Report Error</a></li>
+                    <li id="liRequest"><a href="#">Request Comic</a></li>
+                    <li id="liCommunity"><a href="#">Forum</a></li>
+                    <li id="li2"><a href="#">Watch cartoon</a></li>
+                </ul>
+            </div>
         </div>
+        <div id="navsubbar">
+            <p>
+                <a title="Bookmarks, reading type" href="#">Register for MORE options</a>&nbsp;|&nbsp;
+                <a href="#">Random comic</a>
+            </p>
+        </div>
+    </div>
         <!-- end div headnav -->
         
     <div id="fb-root">
