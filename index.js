@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 const wishes = require('./src/wishes.json');
 
 app.get(`/`, (req, res) => {
-  res.send('<h1>Hello World</h1>');
+  res.render('index.ejs');
 });
 
 app.get(`/${md5('wishes')}`, (req, res) => {
