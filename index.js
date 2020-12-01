@@ -20,7 +20,12 @@ app.get(`/${md5('wishes')}`, (req, res) => {
 });
 
 app.get(`/${md5('wishes')}/:id`, (req, res) => {
-  res.render('wishespage.ejs');
+  wishes.forEach(wish => {
+    if (wish.id === req.params.id)
+    {
+      res.render('wishespage.ejs', { wish: wish });
+    }
+  });
 });
 
 app.get(`/${md5('elitewishes')}`, (req, res) => {
