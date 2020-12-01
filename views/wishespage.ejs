@@ -2,10 +2,7 @@
 <html>
 <head>
   <title>
-    Over the Garden Wall: Circus Friends
-    comic | Read
-    Over the Garden Wall: Circus Friends
-    comic online in high quality
+    <%= `${wish.name} comic | Read ${wish.name} comic online in high quality` %>
   </title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -76,39 +73,46 @@
         <div id="leftside">
           <div class="bigBarContainer">
               <div class="barTitle">
-                  Over the Garden Wall: Circus Friends
-                  information
+                <%= `${wish.name} information` %>
               </div>
                 <div class="barContent">
                     <div>
-                        <a Class="bigChar" href="#">Over the Garden Wall: Circus Friends</a>
+                        <a Class="bigChar" href="#"><%= `${wish.name}` %></a>
                         <p>
-                            <span class="info">Genres:</span>&nbsp;<a href="#" class="dotUnder" title=".">Fantasy</a><span class="info">,</span> <a href="#" class="dotUnder" title=".">Movies & TV</a>
+                            <% let g = ['Action', 'Adventure', 'Anthology', 'Anthropomorphic', 'Biography', 'Children', 'Comedy', 'Crime', 'Drama', 'Family', 'Fantasy', 'Fighting', 'Graphic Novels', 'Historical', 'Horror', 'Leading Ladies', 'LGBTQ', 'Literature', 'Manga', 'Martial Arts', 'Mature', 'Military', 'Movies & TV', 'Music', 'Mystery', 'Mythology', 'Personal', 'Political', 'Post-Apocalyptic', 'Psychological', 'Pulp', 'Religious', 'Robots', 'Romance', 'School Life', 'Sci-Fi', 'Slice of Life', 'Sport', 'Spy', 'Superhero', 'Supernatural', 'Suspense', 'Thriller', 'Vampires', 'Video Games', 'War', 'Western', 'Zombies']; %>
+                            <% let r = Math.floor(Math.random() * g.length); %>
+                            <span class="info">Genres:</span>&nbsp;<a href="#" class="dotUnder" title="."><%= g[r] %></a>
+                            <% g.splice(r, 1); %>
+                            <% r = Math.floor(Math.random() * g.length); %>
+                            <span class="info">,</span> <a href="#" class="dotUnder" title="."><%= g[r] %></a>
+                            <% g.splice(r, 1); %>
+                            <% r = Math.floor(Math.random() * g.length); %>
+                            <span class="info">,</span> <a href="#" class="dotUnder" title="."><%= g[r] %></a>
                         </p>
                         
                         <p>
-                            <span class="info">Publisher:</span>&nbsp;<a href="#" class="dotUnder" title="N/a">BOOM! - KaBOOM!</a>
+                            <span class="info">Publisher:</span>&nbsp;<a href="#" class="dotUnder" title="N/a"><%= `${wish.name}` %></a>
                         </p>
                         
                         <p>
-                            <span class="info">Writer:</span>&nbsp;<a href="#" class="dotUnder" title="N/a">Jonathan Case</a>
+                            <span class="info">Writer:</span>&nbsp;<a href="#" class="dotUnder" title="N/a"><%= `${wish.name}` %></a>
                         </p>
                         
                         <p>
-                            <span class="info">Artist:</span>&nbsp;<a href="#" class="dotUnder" title="N/a">John P Golden</a>
+                            <span class="info">Artist:</span>&nbsp;<a href="#" class="dotUnder" title="N/a"><%= `${wish.name}` %></a>
                         </p>
                         
                         <p>
-                            <span class="info">Publication date:</span>&nbsp;October 2 2019
+                            <span class="info">Publication date:</span>&nbsp;<%= `${wish.date}` %>
                         </p>
                         
                         <p>
                             <span class="info">Status:</span>&nbsp;Completed
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="info">Views:</span>&nbsp;705&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="info">Views:</span>&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </p>
                         <p>
                             <span class="info">Summary:</span>
-                            <p style="text-align: justify;">It&rsquo;s not all laughter and peanuts for Wirt, Greg, and Beatrice when they stumble upon a circus in the Unknown. What starts as good fun quickly becomes a dangerous situation when the Ringmaster sets his eyes on Beatrice to be his next star attraction. Wirt and Greg must work together with past-his-prime Strongman Frederico and down-in-the-dumps clown Paola to infiltrate the circus and rescue Beatrice. Join Eisner Award-winning writer Jonathan Case (Before Tomorrowland) and newcomer artist John Golden (Boneman) as the Eisner Award-winning Over the Garden Wall&trade; series continues its journey into the Unknown with this all-new original</p>
+                            <p style="text-align: justify;"><%- wish.wish %></p>
                         </p>
                     </div>
                 </div>
@@ -120,7 +124,7 @@
                     Cover</div>
                 <div class="barContent">
                     <div style="text-align: center">
-                        <img width="190px" height="250px" src="#" />
+                        <img width="190px" height="<%= `${wish.height / wish.width * 190}px` %>" src="<%= `/images/wishpics/${wish.pic}` %>" />
                     </div>
                 </div>
             </div>
