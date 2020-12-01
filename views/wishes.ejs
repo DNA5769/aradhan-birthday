@@ -147,7 +147,7 @@
                     <div id="tab-newest">
                         <% wishes.forEach((wish, i) => { %>
                             <div style="position: relative;" class="<%= i%2===0 ? '' : 'blue'; %>">
-                                <a href="<%= `/b5cd1f00c6791b77e358231afd1ec35d/${wish.id}` %>"><img width="<%= `${wish.width / wish.height * 100}px` %>" height="100px" src="<%= `/images/wishpics/${wish.id}` %>" /></a>
+                                <a href="<%= `/b5cd1f00c6791b77e358231afd1ec35d/${wish.id}` %>"><img width="<%= `${wish.width / wish.height * 100}px` %>" height="100px" src="<%= `/images/wishpics/${wish.pic}` %>" /></a>
                                 <a class="title" href="<%= `/b5cd1f00c6791b77e358231afd1ec35d/${wish.id}` %>"><span><%- wish.name %></span></a>
                                 <p>
                                     <% let g = ['Action', 'Adventure', 'Anthology', 'Anthropomorphic', 'Biography', 'Children', 'Comedy', 'Crime', 'Drama', 'Family', 'Fantasy', 'Fighting', 'Graphic Novels', 'Historical', 'Horror', 'Leading Ladies', 'LGBTQ', 'Literature', 'Manga', 'Martial Arts', 'Mature', 'Military', 'Movies & TV', 'Music', 'Mystery', 'Mythology', 'Personal', 'Political', 'Post-Apocalyptic', 'Psychological', 'Pulp', 'Religious', 'Robots', 'Romance', 'School Life', 'Sci-Fi', 'Slice of Life', 'Sport', 'Spy', 'Superhero', 'Supernatural', 'Suspense', 'Thriller', 'Vampires', 'Video Games', 'War', 'Western', 'Zombies']; %>
