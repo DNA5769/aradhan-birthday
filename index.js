@@ -12,11 +12,11 @@ app.set('view engine', 'ejs');
 const wishes = require('./src/wishes.json');
 
 app.get(`/`, (req, res) => {
-  res.render('wishes.ejs');
+  res.send('<h1>Hello World</h1>');
 });
 
 app.get(`/${md5('wishes')}`, (req, res) => {
-  res.render('wishes.ejs');
+  res.render('wishes.ejs', { wishes: wishes });
 });
 
 app.get(`/${md5('wishes')}/:id`, (req, res) => {
