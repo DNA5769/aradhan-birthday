@@ -160,7 +160,9 @@
                                     <% r = Math.floor(Math.random() * g.length); %>
                                     <span class="info">,</span> <a href="#" class="dotUnder" title="."><%= g[r] %></a>
                                 </p>
-                                <p><span class="info">Latest:</span>&nbsp;<a href="<%= `/b5cd1f00c6791b77e358231afd1ec35d/${wish.id}` %>" title="<%= wish.name %>">Issue #69</a></p>
+                                <% let n = [7, 21, 57, 69, 420] %>
+                                <% r = Math.floor(Math.random() * n.length); %>
+                                <p><span class="info">Latest:</span>&nbsp;<a href="<%= `/b5cd1f00c6791b77e358231afd1ec35d/${wish.id}` %>" title="<%= wish.name %>"><%= `Issue #${n[r]}` %></a></p>
                             </div>
                         <% }); %>
                     </div>
