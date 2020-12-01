@@ -17,6 +17,10 @@ app.get(`/${md5('wishes')}`, (req, res) => {
   res.render('wishes.ejs');
 });
 
+app.get(`/${md5('wishes')}/:id`, (req, res) => {
+  res.render('wishespage.ejs');
+});
+
 app.get(`/${md5('elitewishes')}`, (req, res) => {
   res.render('elitewishes.ejs');
 });
