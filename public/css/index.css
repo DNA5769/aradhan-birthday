@@ -18,11 +18,3 @@ body {
 .keyBox:focus {
   outline-width: 0;
 }
-
-.false {
-  border: solid red 2px;
-}
-
-.true {
-  border: solid green 2px;
-}

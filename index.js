@@ -11,6 +11,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 const wishes = require(path.join(__dirname, 'src', 'wishes.json'));
+let status = '';
 
 app.get(`/`, (req, res) => {
   res.render('index.ejs');
@@ -25,7 +26,7 @@ app.post(`/`, (req, res) => {
   }
   else
   {
-    res.redirect('/');
+    res.sendStatus(404);
   }
 });
 
