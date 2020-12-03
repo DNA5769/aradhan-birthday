@@ -6,3 +6,23 @@
 body {
   background-color: black;
 }
+
+.keyBox {
+  display: block;
+  width: 75%;
+  margin: 100px auto;
+  height: 50px;
+  font-size: 2.5rem;
+  padding: 0 2px;
+}
+.keyBox:focus {
+  outline-width: 0;
+}
+
+.false {
+  border: solid red 2px;
+}
+
+.true {
+  border: solid green 2px;
+}

@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const md5 = require('md5');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,10 +10,23 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-const wishes = require('./src/wishes.json');
+const wishes = require(path.join(__dirname, 'src', 'wishes.json'));
 
 app.get(`/`, (req, res) => {
   res.render('index.ejs');
+});
+
+app.post(`/`, (req, res) => {
+  const { key } = req.body;
+
+  if (key === 'help')
+  {
+    res.download(path.join(__dirname, 'public', 'images', 'wishpics', 'angel.png'));
+  }
+  else
+  {
+    res.redirect('/');
+  }
 });
 
 app.get(`/${md5('wishes')}`, (req, res) => {
