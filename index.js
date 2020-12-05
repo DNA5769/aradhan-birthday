@@ -48,10 +48,6 @@ app.post(`/`, (req, res) => {
   {
     res.redirect(`/${md5('wishes')}`);
   }
-  else if (key.toLowerCase() === 'Porn'.toLowerCase())
-  {
-    res.redirect(`/${md5('elitewishes')}`);
-  }
   else
   {
     axios.get(`https://api.unsplash.com/photos/random/?query=puppy&client_id=Io5T7QMnggEC-KI9KqtKH4Yez3uEdFUaon7VkOqVy-E`)
@@ -74,12 +70,6 @@ app.get(`/${md5('wishes')}/:id`, (req, res) => {
   });
 });
 
-app.get(`/${md5('elitewishes')}`, (req, res) => {
-  res.render('elitewishes.ejs');
-});
-
 app.listen(PORT, () => {
   console.log(`[STARTING] http://localhost:${PORT}`);
-  console.log(`[STARTING] http://localhost:${PORT}/${md5('wishes')}`);
-  console.log(`[STARTING] http://localhost:${PORT}/${md5('elitewishes')}`);
 });

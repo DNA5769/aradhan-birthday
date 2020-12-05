@@ -6,8 +6,7 @@
     "date": "November 28 2020",
     "pic": "angel.png", 
     "width": 1080,
-    "height": 1526,
-    "iselite": false
+    "height": 1526
   },
   {
     "id": "zeeshan",
@@ -16,8 +15,7 @@
     "date": "December 5 2020",
     "pic": "zeeshan.jpg", 
     "width": 1575,
-    "height": 2100,
-    "iselite": false
+    "height": 2100
   },
   {
     "id": "om",
@@ -26,8 +24,7 @@
     "date": "December 1 2020",
     "pic": "om.jpg", 
     "width": 306,
-    "height": 192,
-    "iselite": false
+    "height": 192
   },
   {
     "id": "rohan",
@@ -36,8 +33,7 @@
     "date": "December 4 2020",
     "pic": "default.png", 
     "width": 1001,
-    "height": 719,
-    "iselite": false
+    "height": 719
   },
   {
     "id": "shivam",
@@ -46,8 +42,7 @@
     "date": "December 4 2020",
     "pic": "shivam.jpg", 
     "width": 900,
-    "height": 1600,
-    "iselite": true
+    "height": 1600
   },
   {
     "id": "maanas",
@@ -56,8 +51,7 @@
     "date": "December 5 2020",
     "pic": "maanas.png", 
     "width": 601,
-    "height": 557,
-    "iselite": true
+    "height": 557
   },
   {
     "id": "crippler",
@@ -66,7 +60,6 @@
     "date": "December 5 2020",
     "pic": "crippler.png", 
     "width": 551,
-    "height": 427,
-    "iselite": true
+    "height": 427
   }
 ]
