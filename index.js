@@ -48,6 +48,10 @@ app.post(`/`, (req, res) => {
   {
     res.redirect(`/${md5('wishes')}`);
   }
+  else if (key.toLowerCase() === 'You'.toLowerCase())
+  {
+    res.redirect(`/${md5('mywish')}`);
+  }
   else
   {
     axios.get(`https://api.unsplash.com/photos/random/?query=puppy&client_id=Io5T7QMnggEC-KI9KqtKH4Yez3uEdFUaon7VkOqVy-E`)
@@ -59,6 +63,10 @@ app.post(`/`, (req, res) => {
 
 app.get(`/${md5('wishes')}`, (req, res) => {
   res.render('wishes.ejs', { wishes: wishes });
+});
+
+app.get(`/${md5('mywish')}`, (req, res) => {
+  res.render('mywish.ejs');
 });
 
 app.get(`/${md5('wishes')}/:id`, (req, res) => {
