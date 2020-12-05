@@ -151,5 +151,23 @@
     "pic": "ananya.jpg", 
     "width": 745,
     "height": 540
+  },
+  {
+    "id": "jaynam",
+    "name": "Jaynam",
+    "wish": "Happy birthday 😻",
+    "date": "December 5 2020",
+    "pic": "jaynam.jpg", 
+    "width": 750,
+    "height": 1137
+  },
+  {
+    "id": "noman",
+    "name": "#humblebrags",
+    "wish": "you are not average ,<br>you are one of the most committed human beings i have known<br>I want you to reach your goals as fast as you can<br>so you can start believing in yourself way more<br>(you are so fucking capable and by no means average)<br>and personally i think you maintain your long term and short term friendships the best.",
+    "date": "December 5 2020",
+    "pic": "noman.png", 
+    "width": 1920,
+    "height": 1200
   }
 ]
