@@ -28,5 +28,25 @@
     "width": 306,
     "height": 192,
     "iselite": false
+  },
+  {
+    "id": "rohan",
+    "name": "Rohan",
+    "wish": "Happy birthday aradhan<br>Have a nice 19th birthday and keep cracking inappropriate jokes and hope we can meet someday after all of this",
+    "date": "December 4 2020",
+    "pic": "default.png", 
+    "width": 1001,
+    "height": 719,
+    "iselite": false
+  },
+  {
+    "id": "shivam",
+    "name": "Dick Grayson",
+    "wish": "Hey aradhan, fiannnly 18 huh. sex you soon. Have a fun day, hope the laptop comes in soon. I know I usually write big paras and show a lot of compassion in these birthday wishes but I wanted to keep this short and sweet. Like me.",
+    "date": "December 4 2020",
+    "pic": "shivam.jpg", 
+    "width": 900,
+    "height": 1600,
+    "iselite": true
   }
 ]
