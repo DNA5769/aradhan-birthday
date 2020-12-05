@@ -20,9 +20,37 @@ app.get(`/`, (req, res) => {
 app.post(`/`, (req, res) => {
   const { key } = req.body;
 
-  if (key === 'help')
+  if (key === '06/12/01')
   {
-    res.download(path.join(__dirname, 'public', 'images', 'wishpics', 'angel.png'));
+    res.download(path.join(__dirname, 'src', 'puzzles', 'Instructions.txt'));
+  }
+  else if (key.toLowerCase() === 'I love you, Dennis'.toLowerCase())
+  {
+    res.download(path.join(__dirname, 'src', 'puzzles', 'Puzzle 1.zip'));
+  }
+  else if (key.toLowerCase() === 'Sugar Donut'.toLowerCase())
+  {
+    res.download(path.join(__dirname, 'src', 'puzzles', 'Puzzle 2.zip'));
+  }
+  else if (key.toLowerCase() === 'Eminem'.toLowerCase())
+  {
+    res.download(path.join(__dirname, 'src', 'puzzles', 'Puzzle 3.zip'));
+  }
+  else if (key.toLowerCase() === 'D.N.A.'.toLowerCase())
+  {
+    res.download(path.join(__dirname, 'src', 'puzzles', 'Puzzle 4.zip'));
+  }
+  else if (key.toLowerCase() === '9'.toLowerCase())
+  {
+    res.download(path.join(__dirname, 'src', 'puzzles', 'Puzzle 5.zip'));
+  }
+  else if (key.toLowerCase() === 'Python is better than Java'.toLowerCase())
+  {
+    res.redirect(`/${md5('wishes')}`);
+  }
+  else if (key.toLowerCase() === 'Porn'.toLowerCase())
+  {
+    res.redirect(`/${md5('elitewishes')}`);
   }
   else
   {
