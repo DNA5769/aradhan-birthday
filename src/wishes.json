@@ -88,5 +88,23 @@
     "pic": "ameesha.jpg", 
     "width": 1280,
     "height": 720
+  },
+  {
+    "id": "bharat",
+    "name": "Bharat",
+    "wish": "Happy birthday Aradhan! The only real memories I got of us together was that one MUN council we chaired but that sure was the best experience and you are honestly such a great dude. Happy birthday once again and may you get all the cool shit in life ✊🏽❤",
+    "date": "December 5 2020",
+    "pic": "bharat.jpg", 
+    "width": 750,
+    "height": 563
+  },
+  {
+    "id": "noel",
+    "name": "Black man",
+    "wish": "Master I am eternally grateful. You have been kind enough to send memes and stay in touch. Means a lot. Hope you do what makes you happy! Have a good one bruv <3",
+    "date": "December 5 2020",
+    "pic": "noel.jpg", 
+    "width": 720,
+    "height": 960
   }
 ]
