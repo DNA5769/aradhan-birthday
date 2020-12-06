@@ -187,5 +187,23 @@
     "pic": "abilash.png", 
     "width": 753,
     "height": 500
+  },
+  {
+    "id": "moyush",
+    "name": "Moyush",
+    "wish": "Happy bday aradhan pls send me link to shivam's fire track 🔥🔥",
+    "date": "December 6 2020",
+    "pic": "moyush.jpg", 
+    "width": 720,
+    "height": 719
+  },
+  {
+    "id": "tushar",
+    "name": "Tushar",
+    "wish": "Happy Birthday Aradhan, Looking pretty sexy",
+    "date": "December 6 2020",
+    "pic": "tushar.jpg", 
+    "width": 640,
+    "height": 677
   }
 ]
