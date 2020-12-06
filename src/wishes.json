@@ -178,5 +178,14 @@
     "pic": "iqra.jpg", 
     "width": 720,
     "height": 1480
+  },
+  {
+    "id": "abilash",
+    "name": "ABilash",
+    "wish": "Happy birthday aradhan 😍",
+    "date": "December 6 2020",
+    "pic": "abilash.png", 
+    "width": 753,
+    "height": 500
   }
 ]
