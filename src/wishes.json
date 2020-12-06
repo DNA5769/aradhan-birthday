@@ -205,5 +205,14 @@
     "pic": "tushar.jpg", 
     "width": 640,
     "height": 677
+  },
+  {
+    "id": "abital",
+    "name": "Abital",
+    "wish": "Dear Aradhan,<br><br>On your special day, I wish you good luck. I hope this wonderful day will fill up your heart with joy and blessings. May all the joy and happiness you have spread come back to you hundredfold.",
+    "date": "December 6 2020",
+    "pic": "abital.jpg", 
+    "width": 874,
+    "height": 620
   }
 ]
