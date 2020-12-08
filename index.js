@@ -78,6 +78,12 @@ app.get(`/${md5('wishes')}/:id`, (req, res) => {
   });
 });
 
+app.get('/denniswish', (req, res) => {
+  res.json({
+    wish: 'Not yet'
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`[STARTING] http://localhost:${PORT}`);
 });
